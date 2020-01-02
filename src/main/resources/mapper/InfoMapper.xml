@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yomyom.project.system.dao.InfoDAO">
+    <select id="selectAllInfo"  parameterType="map" resultType="com.yomyom.project.system.dto.InfoDTO">
+        select *
+        from Persons
+        where PersonID=#{id}
+    </select>
+</mapper>
